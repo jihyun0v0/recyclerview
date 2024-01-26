@@ -3,5 +3,5 @@ package com.example.recyclerview
 import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
-    val mockData: List<String> = ('A'..'Z').map { it.toString() }
+    val mockData: MutableList<String> =(0..200).map{it.toString()}.toMutableList()
 }
